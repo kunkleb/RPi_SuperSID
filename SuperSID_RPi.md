@@ -32,6 +32,7 @@ Move your cursor to the upper right of the window and hover over the icon that w
 If you get the message “currently cannot show desktop” when trying to connect to the RPi from your PC, you must lower the screen resolution of the RPi.
 
 If you have disconnected the RPi from a monitor, reconnect it and choose a lower resolution.
+
 **Buster OS:** under Preferences > Raspberry Pi Configuration > Display > Set Resolution.  Choose a lower resolution than the one you recorded earlier when using fbset.
 
 **Bullseye OS:** under Preferences > Raspberry Pi Configuration > Display > Headless Resolution.  Choose a lower resolution than the one you recorded earlier when using fbset.

@@ -33,8 +33,10 @@ If you get the message “currently cannot show desktop” when trying to connec
 
 
 If you have disconnected the RPi from a monitor, reconnect it and choose a lower resolution.
-Buster OS: under Preferences > Raspberry Pi Configuration > Display > Set Resolution.  Choose a lower resolution than the one you recorded earlier when using fbset.
-Bullseye OS: under Preferences > Raspberry Pi Configuration > Display > Headless Resolution.  Choose a lower resolution than the one you recorded earlier when using fbset.
+**Buster OS:** under Preferences > Raspberry Pi Configuration > Display > Set Resolution.  Choose a lower resolution than the one you recorded earlier when using fbset.
+
+**Bullseye OS:** under Preferences > Raspberry Pi Configuration > Display > Headless Resolution.  Choose a lower resolution than the one you recorded earlier when using fbset.
+
 Reboot and try again to log in.
 
 

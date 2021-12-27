@@ -1,12 +1,6 @@
 ﻿# SuperSID on Raspberry Pi
 
-
-
 ## Hardware
-________________
-
-
-
 
 The following setup procedures have been tested using the Raspberry Pi 3 Model B, Raspberry Pi 3 Model B+, Raspberry Pi 4 B, and Raspberry Pi Zero 2 W using the Raspberry Pi OS Buster (Legacy). 
 

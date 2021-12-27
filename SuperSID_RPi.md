@@ -22,7 +22,7 @@ Move your cursor to the upper right of the window and hover over the icon that w
 
 ## Headless Setup
 
-Here is a link to a youtube video with information on how to install RealVNC on a Windows or Mac computer and here is one for Ubuntu.
+[Here](https://youtu.be/NWBmYnNvN3A) is a link to a youtube video with information on how to install RealVNC on a Windows or Mac computer and here is one for Ubuntu.
   
 If you get the message “currently cannot show desktop” when trying to connect to the RPi from your PC, you must lower the screen resolution of the RPi.
 

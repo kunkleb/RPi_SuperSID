@@ -74,6 +74,63 @@ These directories will be used to store the data that will be sent via ftp to St
 If your RPi is connected to the internet you can ignore 2. Extra Software and 3.1 optional virtual environment.
 Proceed with the commands under 3.2
 
+## 2) Extra software
+
+Time synchro over the Internet:
+```console
+    $ sudo apt-get install ntpdate ntp
+```
+Follow the tutorial [Raspberry Pi sync date and time](https://victorhurdugaci.com/raspberry-pi-sync-date-and-time)
+
+Optional: Virtualenv management for Python:
+```console
+    $ sudo apt-get install mkvirtualenv
+```
+
+## 3) Installing SuperSID
+
+### 3.1) optional virtual environment
+
+This step is optional. Creating your own environment allows to install libraries in all freedom,
+without `sudo` and ensure you have a coherent and working set of libraries (sound card).
+If your Raspi is dedicated to SuperSID then you can skip this step and install all globally.
+
+From /home/pi:
+```console
+    $ cd ~/supersid
+    $ mkvirtualenv -p /usr/bin/python3 supersid
+    $ workon supersid
+    $ toggleglobalsitepackages
+```
+
+Your prompt should now start with '(supersid)'
+
+This also ensures that we run in Python 3.7.3 as per current configuration.
+
+
+### 3.2) Global or local installation
+
+This Raspi 3 is dedicated to SuperSid or you do not plan to mix various libraries: install at system level all the libraries.
+You can do so exactly like you would do in linux, for an local installation inside the virtual environement by first executing 'workon supersid'.
+
+
+```console
+    $ sudo apt-get install python3-matplotlib
+    $ sudo apt-get install libasound2-dev
+    $ sudo apt-get install libatlas-base-dev
+
+    $ cd ~/supersid
+    $ pip3 install -r requirements.txt
+```
+
+Optional and not required. Install when you want to test additonal audio libraries:
+
+```console
+    $ sudo apt install libportaudio2
+    $ pip3 install sounddevice
+    $ pip3 install PyAudio
+```
+
 
 Identify Sound Card
 ________________

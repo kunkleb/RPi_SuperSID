@@ -62,7 +62,7 @@ To update (pull) to the latest version, do:
     $ git pull
 ```
 
-Open a terminal window and do the following:
+Now do the following:
 
 ~$ cd supersid
 

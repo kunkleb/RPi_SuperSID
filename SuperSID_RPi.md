@@ -47,11 +47,21 @@ Alternatively, if you have an app such as PuTTy, you can SSH into the Pi using i
 
 ## SuperSID Installation
 
+## 1) Get the latest supersid software
 
+Open a terminal window and get the source from GitHub.com
 
-Open the web browser and navigate to: https://github.com/sberl/supersid
-Click on docs and follow the directions under SuperSIDonRaspi3.md
-Proceed with the instruction for getting the source using the git clone command.
+```console
+    $ cd ~
+    $ git clone https://github.com/sberl/supersid.git
+```
+
+To update (pull) to the latest version, do:
+```console
+    $ cd ~/supersid
+    $ git pull
+```
+
 Open a terminal window and do the following:
 ~$ cd supersid
 ~/supersid $ mkdir Data

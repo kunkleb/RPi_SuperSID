@@ -63,9 +63,13 @@ To update (pull) to the latest version, do:
 ```
 
 Open a terminal window and do the following:
+
 ~$ cd supersid
+
 ~/supersid $ mkdir Data
+
 ~/supersid $ mkdir outgoing
+
 These directories will be used to store the data that will be sent via ftp to Stanford.
 If your RPi is connected to the internet you can ignore 2. Extra Software and 3.1 optional virtual environment.
 Proceed with the commands under 3.2

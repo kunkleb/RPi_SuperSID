@@ -41,6 +41,7 @@ Reboot and try again to log in.
 
 Alternatively, if you have an app such as PuTTy, you can SSH into the Pi using its WiFi address.  
 **Buster OS:** After connecting type sudo raspi-config, choose #2 Display Options, then D1 Resolution.  Choose a lower resolution than the one you recorded earlier when using fbset.  Choose Finish and Reboot to have the change take effect.
+
 **Bullseye OS:**  After connecting type sudo raspi-config, choose #2 Display Options, then D5 VNC Resolution.  Choose a lower resolution than the one you recorded earlier when using fbset.  Choose Finish and Reboot to have the change take effect.
 
 

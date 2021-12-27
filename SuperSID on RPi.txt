@@ -1,4 +1,4 @@
-﻿SuperSID on Raspberry Pi
+# SuperSID on Raspberry Pi
 
 
 

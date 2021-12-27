@@ -8,11 +8,7 @@ The following setup procedures have been tested using the Raspberry Pi 3 Model B
 The sound card used was a StarTech ICUSBAUDIO2D.  
 
 
-Raspberry Pi Setup
-________________
-
-
-
+## Raspberry Pi Setup
 
 In your PC web browser, go to https://www.raspberrypi.org/help/ and follow the instructions for setting up your Raspberry Pi.
 Using the Raspberry Pi Imager is the easiest way to install the software on the SD card.  

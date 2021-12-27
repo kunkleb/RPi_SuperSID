@@ -3,10 +3,7 @@
 ## Hardware
 
 The following setup procedures have been tested using the Raspberry Pi 3 Model B, Raspberry Pi 3 Model B+, Raspberry Pi 4 B, and Raspberry Pi Zero 2 W using the Raspberry Pi OS Buster (Legacy). 
-
-
 The sound card used was a StarTech ICUSBAUDIO2D.  
-
 
 ## Raspberry Pi Setup
 
@@ -23,11 +20,7 @@ Under Advanced Options choose Expand Filesystem
 Move your cursor to the upper right of the window and hover over the icon that will show the wlan0 (WiFi) address that your router has assigned to the RPi.  Record this address (192.168.1.xxx) if you intend to run the RPi headless using RealVNC.  
 
 
-Headless Setup
-________________
-
-
-
+## Headless Setup
 
 Here is a link to a youtube video with information on how to install RealVNC on a Windows or Mac computer and here is one for Ubuntu.
   
@@ -45,11 +38,7 @@ Buster OS: After connecting type sudo raspi-config, choose #2 Display Options, t
 Bullseye OS:  After connecting type sudo raspi-config, choose #2 Display Options, then D5 VNC Resolution.  Choose a lower resolution than the one you recorded earlier when using fbset.  Choose Finish and Reboot to have the change take effect.
 
 
-SuperSID Installation
-________________
-
-
-
+## SuperSID Installation
 
 Open the web browser and navigate to: https://github.com/sberl/supersid
 Click on docs and follow the directions under SuperSIDonRaspi3.md

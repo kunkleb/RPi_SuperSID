@@ -7,9 +7,14 @@ The sound card used was a StarTech ICUSBAUDIO2D.
 
 ## Raspberry Pi Setup
 
-In your PC web browser, go to https://www.raspberrypi.org/help/ and follow the instructions for setting up your Raspberry Pi.
-Using the Raspberry Pi Imager is the easiest way to install the software on the SD card.  
-When complete, insert the SD card into the RPi and follow the setup instructions.
+[Set up your Raspberry Pi](https://www.raspberrypi.com/documentation/computers/getting-started.html#setting-up-your-raspberry-pi) with the image **Raspberry OS (32-bit)**. AT the date of the installation this corresponds to *buster*.
+Boot on the new micro-SD card, follow normal process for any fresh system install. Connect to the internet.
+
+Execute the classic:
+```console
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
+```
 After the setup is complete, click on the Raspberry icon in the upper left of the screen.
 From the drop down, choose Preferences > Raspberry Pi Configuration.
 Under the Interface tab, Enable SSH & VNC - this will allow you to access the RPi remotely from your PC.
@@ -40,14 +45,7 @@ Bullseye OS:  After connecting type sudo raspi-config, choose #2 Display Options
 
 ## SuperSID Installation
 
-[Set up your Raspberry Pi](https://www.raspberrypi.com/documentation/computers/getting-started.html#setting-up-your-raspberry-pi) with the image **Raspberry OS (32-bit)**. AT the date of the installation this corresponds to *buster*.
-Boot on the new micro-SD card, follow normal process for any fresh system install. Connect to the internet.
 
-Execute the classic:
-```console
-    $ sudo apt-get update
-    $ sudo apt-get upgrade
-```
 
 Open the web browser and navigate to: https://github.com/sberl/supersid
 Click on docs and follow the directions under SuperSIDonRaspi3.md

@@ -40,6 +40,15 @@ Bullseye OS:  After connecting type sudo raspi-config, choose #2 Display Options
 
 ## SuperSID Installation
 
+[Set up your Raspberry Pi](https://www.raspberrypi.com/documentation/computers/getting-started.html#setting-up-your-raspberry-pi) with the image **Raspberry OS (32-bit)**. AT the date of the installation this corresponds to *buster*.
+Boot on the new micro-SD card, follow normal process for any fresh system install. Connect to the internet.
+
+Execute the classic:
+```console
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
+```
+
 Open the web browser and navigate to: https://github.com/sberl/supersid
 Click on docs and follow the directions under SuperSIDonRaspi3.md
 Proceed with the instruction for getting the source using the git clone command.

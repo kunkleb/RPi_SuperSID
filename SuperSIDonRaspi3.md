@@ -35,8 +35,8 @@ To update (pull) to the latest version, do:
 ```
 Now do the following:
 ```console
-	~/supersid $ mkdir Data
-	~/supersid $ mkdir outgoing
+    ~/supersid $ mkdir Data
+    ~/supersid $ mkdir outgoing
 ```
 These directories will be used to store the data that will be sent via ftp to Stanford.
 If your RPi is connected to the internet you can ignore 2. Extra Software and 3.1 optional virtual environment.
@@ -336,10 +336,10 @@ In a terminal window create a script in the /home/pi directory by typing nano ft
 #!/bin/bash
 
 cd ~/supersid/supersid
-
 ./ftp_to_stanford.py -y -c ~/supersid/Config/supersid.cfg
 
 Save the file (Ctrl O) and exit (Ctrl X).
+
 Make it executable by doing:
 
 
@@ -385,7 +385,7 @@ Save and Exit
 In the /home/pi directory, create a file called runSID.sh
 
 ```console
-	$ nano runSID.sh
+    $ nano runSID.sh
 ```
 add the following to the file:
 
@@ -402,7 +402,7 @@ Save and Exit
 Make it executable by doing:
 
 ```console
-	$ sudo chmod +x runSID.sh
+    $ sudo chmod +x runSID.sh
 ```
 
 

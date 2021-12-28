@@ -36,7 +36,6 @@ To update (pull) to the latest version, do:
 Now do the following:
 
 ~$ cd supersid
-
 ~/supersid $ mkdir Data
 
 ~/supersid $ mkdir outgoing

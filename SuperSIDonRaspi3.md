@@ -381,6 +381,7 @@ add the following to the bottom of the file:
 
 Save and Exit
 
+
 In the /home/pi directory, create a file called runSID.sh
 
 ```console
@@ -389,12 +390,10 @@ In the /home/pi directory, create a file called runSID.sh
 add the following to the file:
 
 #!/bin/sh
-
 sleep 30
-
 cd /home/pi/supersid/supersid
-
 ./supersid.py
+
 
 Save and Exit
 

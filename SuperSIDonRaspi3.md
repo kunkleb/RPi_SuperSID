@@ -389,6 +389,7 @@ In the /home/pi directory, create a file called runSID.sh
 ```
 add the following to the file:
 
+
 #!/bin/sh
 sleep 30
 cd /home/pi/supersid/supersid

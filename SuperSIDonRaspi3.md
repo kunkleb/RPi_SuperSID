@@ -334,7 +334,6 @@ Crontab can be used to run the program at a specific time each day.
 In a terminal window create a script in the /home/pi directory by typing nano ftp_stanford.sh   The script should contain the following: 
 
 #!/bin/bash
-
 cd ~/supersid/supersid
 ./ftp_to_stanford.py -y -c ~/supersid/Config/supersid.cfg
 

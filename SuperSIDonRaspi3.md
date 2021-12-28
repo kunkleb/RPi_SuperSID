@@ -372,9 +372,12 @@ It is advisable to make a copy of your SD card once you determine that everythin
 
 If you would like this option, do the following:
 
-sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+```console
+    $ sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+```
 
 add the following to the bottom of the file:
+
 @lxterminal --command “/home/pi/runSID.sh”
 
 Save and Exit

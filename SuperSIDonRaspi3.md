@@ -334,14 +334,23 @@ Crontab can be used to run the program at a specific time each day.
 In a terminal window create a script in the /home/pi directory by typing nano ftp_stanford.sh   The script should contain the following: 
 
 #!/bin/bash
+
 cd ~/supersid/supersid
+
 ./ftp_to_stanford.py -y -c ~/supersid/Config/supersid.cfg
 
 Save the file (Ctrl O) and exit (Ctrl X).
-Make it executable by typing sudo chmod +x ftp_stanford.sh 
+Make it executable by doing:
 
 
-In a terminal window type sudo crontab -e.  Choose #1 for the nano editor.  Add the following at the bottom of the file:
+```console
+    $ sudo chmod +x ftp_stanford.sh 
+```
+
+In a terminal window type sudo crontab -e.  Choose #1 for the nano editor.  
+
+Add the following at the bottom of the file:
+
 5 18 * * * /home/pi/ftp_stanford.sh > /home/pi/ftp.log 2>&1
 
 Save the file and exit.
@@ -352,7 +361,7 @@ In this case, the script will run at 5 minutes after 1800 hours (midnight UTC) a
 
 ```console
     $ cd ~/supersid/supersid
-    $ python3 supersid.py -c=../Config/supersid.cfg
+    $ ./supersid.py -c ../Config/supersid.cfg
 ```
 
 ## 9) SD Card Backup
@@ -378,8 +387,11 @@ In the /home/pi directory, create a file called runSID.sh
 add the following to the file:
 
 #!/bin/sh
+
 sleep 30
+
 cd /home/pi/supersid/supersid
+
 ./supersid.py
 
 Save and Exit
@@ -394,6 +406,8 @@ Make it executable by doing:
 ## 11) Plot commands
 
 In a terminal window, navigate to /home/pi/supersid/supersid
+
+Replace filename.csv with the name of the file you want to plot
 
 For a standard plot:
 
@@ -414,7 +428,7 @@ For an interactive plot that enables you to turn stations off/on:
 
 ./supersid_plot_gui.py ../Data/filename.csv
 
-For this, use the file in supersid_format that contains all of the stations as listed in your supersid.cfg.
+For the above, use the file in supersid_format that contains all of the stations as listed in your supersid.cfg.
 
 For a plot that can be sent via email:
 
@@ -423,10 +437,16 @@ For a plot that can be sent via email:
 The email.cfg file in the supersid/Config directory must be filled out with your information.
 
 supersid_plot arguments:
+
 -f        location and name of csv file
+
 -c        location and name of config file
+
 -n        create plot without showing on the screen
+
 -p        create PDF file - ex: -p myplot.pdf
+
 -e        email
+
 -w        retrieve NOAA flare information
 

@@ -333,8 +333,8 @@ Sending the ftp is accomplished by the program ftp_to_stanford.py
 Crontab can be used to run the program at a specific time each day.
 In a terminal window create a script in the /home/pi directory by typing nano ftp_stanford.sh   The script should contain the following: 
 
-#!/bin/bash
-cd ~/supersid/supersid
+#!/bin/bash   
+cd ~/supersid/supersid   
 ./ftp_to_stanford.py -y -c ~/supersid/Config/supersid.cfg
 
 Save the file (Ctrl O) and exit (Ctrl X).
@@ -411,29 +411,23 @@ In a terminal window, navigate to /home/pi/supersid/supersid
 
 Replace filename.csv with the name of the file you want to plot
 
-For a standard plot:
-
+For a standard plot:   
 ./supersid_plot.py -f ../Data/filename.csv -c ../Config/supersid.cfg
 
 
-To create a plot and save it without viewing:
-
+To create a plot and save it without viewing:   
 ./supersid_plot.py -f ../Data/filename.csv -n -p ../Data/filename.pdf -c ../Config/supersid.cfg
 
 
-For a plot containing NOAA flare data:
-
+For a plot containing NOAA flare data:   
 ./supersid_plot.py -w -f ../Data/filename.csv -c ../Config/supersid.cfg
 
-
-For an interactive plot that enables you to turn stations off/on:
-
+For an interactive plot that enables you to turn stations off/on:   
 ./supersid_plot_gui.py ../Data/filename.csv
 
 For the above, use the file in supersid_format that contains all of the stations as listed in your supersid.cfg.
 
-For a plot that can be sent via email:
-
+For a plot that can be sent via email:   
 ./supersid_plot.py -e -n -f ../Data/filename.csv -c ../Config/email.cfg
 
 The email.cfg file in the supersid/Config directory must be filled out with your information.

@@ -3,7 +3,7 @@
 ## Hardware
 
 The following setup procedures have been tested using the Raspberry Pi 3 Model B, Raspberry Pi 3 Model B+, Raspberry Pi 4 B, and Raspberry Pi Zero 2 W using the Raspberry Pi OS Buster (Legacy). 
-The sound card used was a StarTech ICUSBAUDIO2D.  
+The sound card used was a StarTech ICUSBAUDIO2D 
 
 ## Raspberry Pi Setup
 

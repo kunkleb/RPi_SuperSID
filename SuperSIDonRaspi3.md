@@ -428,9 +428,9 @@ For an interactive plot that enables you to turn stations off/on:
 For the above, use the file in supersid_format that contains all of the stations as listed in your supersid.cfg.
 
 For a plot that can be sent via email:   
-./supersid_plot.py -e -n -f ../Data/filename.csv -c ../Config/email.cfg
+./supersid_plot.py -n -f ../Data/filename.csv -c ../Config/supersid.cfg -e xxxx@gmail.com
 
-The email.cfg file in the supersid/Config directory must be filled out with your information.
+The.cfg file in the supersid/Config directory must contain the [Email] section.
 
 supersid_plot arguments:
 
